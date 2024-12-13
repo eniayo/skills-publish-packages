@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Add your test steps here if needed...
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
@@ -24,7 +23,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.CR_PAT }}
       - name: Build container
         uses: docker/build-push-action@v5
         with:
