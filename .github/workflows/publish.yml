@@ -28,6 +28,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/eniayo_a/skills-publish-packages/game:latest
+          tags: ghcr.io/eniayo/skills-publish-packages/game:latest
           labels: |
-            org.opencontainers.image.source=https://github.com/eniayo_a/skills-publish-packages
+            org.opencontainers.image.source=https://github.com/eniayo/skills-publish-packages
